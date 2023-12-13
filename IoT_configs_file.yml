@@ -1,0 +1,22 @@
+# IoT_config_files.yml
+
+- device_name: "IoT_Device_1"
+  device_type: "Sensor"
+  location: "Kitchen"
+  connection_details:
+    - protocol: "MQTT"
+      broker: "mqtt.example.com"
+      port: 1883
+      username: "user"
+      password: "password"
+
+- device_name: "IoT_Device_2"
+  device_type: "Actuator"
+  location: "Living Room"
+  connection_details:
+    - protocol: "HTTP"
+      endpoint: "http://example.com/api/control"
+      authentication:
+        type: "Basic"
+        username: "user"
+        password: "password"
